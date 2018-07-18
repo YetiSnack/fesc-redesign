@@ -1,8 +1,8 @@
-#FESC redesign
-##Objective:
+# FESC redesign
+##O bjective:
 Redesign current FESC site to ensure accessibility, improve mobile friendliness, optimize performance, enhance functionality, and facilitate ease of use for all site visitors.
 
-##Audit:
+## Audit:
 Site audit was performed using Google Lighthouse. 
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) is an open-source, automated tool that has audits for performance, accessibility, progressive web apps, and more. 
 See the following report for assessment of current FESC site.
