@@ -1,0 +1,13 @@
+@import './reset.css';
+body {
+  font: 100% "Noto Sans", sans-serif;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 10px;
+  display: inline-flex;
+}
+
+/*# sourceMappingURL=styles.css.map */

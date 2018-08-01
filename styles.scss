@@ -1,0 +1,14 @@
+@import './reset.css';
+
+$main-font: 'Noto Sans', sans-serif;
+
+body{
+  font: 100% $main-font;
+}
+
+.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 10px;
+  display: inline-flex;
+}
