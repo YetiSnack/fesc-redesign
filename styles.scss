@@ -15,27 +15,33 @@ body{
 }
 
 .topnav {
+  display: flex;
+  align-items: center;
   overflow: hidden;
-  background-color: $san-juan;
+  justify-content: space-between;
+  background-color: $kashmir-blue;
 }
 
+
 .topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
+  //float: left;
+  //display: inline-block;
+  //flex-grow: 1;
+  color: $concrete;
   text-align: center;
-  padding: 14px 16px;
+  //padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
 }
 
 .active {
-  background-color: $polo-blue;
+  //background-color: $polo-blue;
   color: $concrete;
 }
 
 .topnav .search-container {
-  float: right;
+  //float: right;
+  text-align: center;
 }
 
 .topnav input[type=text] {
@@ -43,6 +49,7 @@ body{
   margin-top: 8px;
   font-size: 17px;
   border: none;
+  display: inline-block;
 }
 
 .topnav .search-container button {
@@ -99,8 +106,13 @@ body{
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: $tuscany;
+  //background-color: $san-juan;
+  color: $polo-blue;
   //color: $concrete;
+}
+
+.nav-logo{
+  height: 100px;
 }
 
 .dropdown-content a:hover {
@@ -111,21 +123,20 @@ body{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-body, html {
-    height: 100%;
-    margin: 0;
-}
 
-.hero-image {
-    /* The image used */
-    background-image: url("./images/renewables-1.jpg");
-    /* Set a specific height */
-    height: 50%;
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+#hero{
+  postiion:relative;
+}
+#hero-content{
+  position: absolute;
+  top: 150px;
+  left: 75px;
+  padding: 20px;
+  background-color: rgba(42,81,109,.4);
+  color: #ffffff;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 

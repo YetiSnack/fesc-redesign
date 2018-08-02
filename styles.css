@@ -5,27 +5,26 @@ body {
 }
 
 .topnav {
+  display: flex;
+  align-items: center;
   overflow: hidden;
-  background-color: #2a516d;
+  justify-content: space-between;
+  background-color: #4c7391;
 }
 
 .topnav a {
-  float: left;
-  display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
 }
 
 .active {
-  background-color: #8bb0d1;
   color: #f2f2f2;
 }
 
 .topnav .search-container {
-  float: right;
+  text-align: center;
 }
 
 .topnav input[type=text] {
@@ -33,6 +32,7 @@ body {
   margin-top: 8px;
   font-size: 17px;
   border: none;
+  display: inline-block;
 }
 
 .topnav .search-container button {
@@ -88,7 +88,11 @@ body {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #c2672e;
+  color: #8bb0d1;
+}
+
+.nav-logo {
+  height: 100px;
 }
 
 .dropdown-content a:hover {
@@ -100,21 +104,20 @@ body {
   display: block;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
+#hero {
+  postiion: relative;
 }
 
-.hero-image {
-  /* The image used */
-  background-image: url("./images/renewables-1.jpg");
-  /* Set a specific height */
-  height: 50%;
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+#hero-content {
+  position: absolute;
+  top: 150px;
+  left: 75px;
+  padding: 20px;
+  background-color: rgba(42, 81, 109, 0.4);
+  color: #ffffff;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
