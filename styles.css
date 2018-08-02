@@ -2,6 +2,7 @@
   clean up unused elements
   nest elements to reduce repetition
   fix media queries (resize icons / images for smaller screens)
+  fix drop down elements
 */
 @import './reset.css';
 body {
@@ -17,7 +18,11 @@ body {
   justify-content: space-between;
   background-color: #4c7391;
 }
-
+#footer-container .nav-logo,
+.topnav .nav-logo {
+  height: 100px;
+}
+#footer-container a,
 .topnav a {
   color: #f2f2f2;
   text-align: center;
@@ -25,15 +30,11 @@ body {
   font-size: 25px;
   font-weight: 300;
 }
-
-.active {
-  color: #f2f2f2;
+#footer-container a:hover,
+.topnav a:hover {
+  color: #8bb0d1;
 }
-
-.topnav .search-container {
-  text-align: center;
-}
-
+#footer-container input[type=text],
 .topnav input[type=text] {
   padding: 6px;
   margin-top: 8px;
@@ -41,7 +42,7 @@ body {
   border: none;
   display: inline-block;
 }
-
+#footer-container .search-container button,
 .topnav .search-container button {
   float: right;
   padding: 6px 10px;
@@ -52,66 +53,73 @@ body {
   border: none;
   cursor: pointer;
 }
+#footer-container .icon,
+.topnav .icon {
+  display: none;
+}
+
+/*
+//Clean me up
+.active {
+  //background-color: $polo-blue;
+  color: $concrete;
+}
 
 .topnav .search-container button:hover {
   background: #ccc;
 }
 
-.topnav .icon {
-  display: none;
-}
-
 .dropdown {
   float: left;
   overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 20px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+  .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #163D59;
+  background-color: $san-juan;
   min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
+  a {
+    float: none;
+    //color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  a:hover {
+    background-color: $concrete;
+    color: black;
+  }
+
 }
 
-.dropdown-content a {
-  float: none;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+
 
 .dropdown:hover .dropbtn,
-.topnav a:hover {
-  color: #8bb0d1;
+ {
+  //background-color: $san-juan;
+  color: $polo-blue;
+  //color: $concrete;
 }
 
-.nav-logo {
-  height: 100px;
-}
-
-.dropdown-content a:hover {
-  background-color: #f2f2f2;
-  color: black;
-}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+*/
 #hero {
   postiion: relative;
 }
