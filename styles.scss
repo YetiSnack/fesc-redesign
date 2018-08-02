@@ -1,3 +1,9 @@
+/*TODO:
+  clean up unused elements
+  nest elements to reduce repetition
+  fix media queries (resize icons / images for smaller screens)
+*/
+
 @import './reset.css';
 $concrete: #f2f2f2;
 $polo-blue: #8bb0d1;
@@ -23,14 +29,11 @@ body {
 }
 
 .topnav a {
-  //float: left;
-  //display: inline-block;
-  //flex-grow: 1;
   color: $concrete;
   text-align: center;
-  //padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 300;
 }
 
 .active {
@@ -144,7 +147,7 @@ body {
   font-size: 100px;
 }
 
-   
+
 /*Grid for footer------------------------------------------------------*/
 .grid-container {
   display: grid;
@@ -153,9 +156,6 @@ body {
   grid-template-rows: 1.6fr 0.4fr;
   grid-template-areas: "foot-cont-top" "foot-cont-bottom";
   background-color: $kashmir-blue;
-  border-style: solid;
-  border-width: thin;
-  border-color: black
 }
 
 .foot-cont-top {
@@ -164,9 +164,6 @@ body {
   grid-template-columns: 0.8fr 1.4fr 0.8fr;
   grid-template-rows: 1fr;
   grid-template-areas: "foot-top-left-cont foot-top-mid-cont foot-top-right-cont";
-  border-style: solid;
-  border-width: thin;
-  border-color: black
 }
 
 .foot-top-left-cont {
@@ -174,9 +171,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
   padding-top: 15px;
 }
 
@@ -187,9 +181,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "foot-top-mid-upper-cont" "foot-top-mid-lower-cont";
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
 }
 
 .foot-top-mid-upper-cont {
@@ -197,11 +188,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
   img{
-    height:100px;
+    height:150px;
   }
 }
 
@@ -211,9 +199,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
   a{
     text-decoration: none;
     color: $san-juan;
@@ -226,9 +211,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
   color: $concrete;
   font-size: 20px;
   font-weight: 300;
@@ -239,10 +221,13 @@ body {
   grid-area: foot-cont-bottom;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
+  align-items: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.seals{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*Media Queries-----------------------------------------------------------------*/
@@ -271,6 +256,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 14px;
+
   }
 
   .topnav input[type=text] {
