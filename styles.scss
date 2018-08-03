@@ -37,7 +37,7 @@ body {
     font-weight: 300;
   }
 
-  a:hover{
+  a:hover {
     color: $polo-blue;
   }
 
@@ -68,9 +68,7 @@ body {
   .icon {
     display: none;
   }
-
 }
-
 /*
 //Clean me up
 .active {
@@ -153,7 +151,70 @@ body {
 .fab {
   font-size: 100px;
 }
+/*/
+// main content styling --------------------------------------------*/
 
+.content-grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1.1fr;
+  grid-template-areas: "content-top" "content-bottom";
+}
+
+.content-top {
+  grid-area: content-top;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 50px 500px 50px 50px;
+
+  img {
+    height: 150px;
+  }
+}
+
+.content-bottom {
+  display: grid;
+  grid-area: content-bottom;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "content-bottom-left content-bottom-mid content-bottom-right";
+}
+
+.content-bottom-left {
+  grid-area: content-bottom-left;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-bottom-mid {
+  grid-area: content-bottom-mid;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-bottom-right {
+  grid-area: content-bottom-right;  border-style: solid;
+    border-width: medium;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*Grid for footer------------------------------------------------------*/
 .grid-container {
   display: grid;
@@ -224,15 +285,20 @@ body {
 .foot-cont-bottom {
   grid-area: foot-cont-bottom;
   display: flex;
-  justify-content: center;
-  align-items: space-around;
+  flex-direction: row;
+  justify-content: space-around;
+  //align-items: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-style: solid;
+  border-color: black;
+  border-width: medium;
+  flex-shring: 1;
 }
 
 .seals {
-  padding-left: 10px;
-  padding-right: 10px;
+  //padding-left: 10px;
+  //padding-right: 10px;
 }
 /*Media Queries-----------------------------------------------------------------*/
 //fix me
