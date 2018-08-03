@@ -1,7 +1,7 @@
 /*TODO:
   clean up unused elements
   nest elements to reduce repetition
-  fix media queries (resize icons / images for smaller screens)
+  fix media queries (resize icons / images for smaller screens) 821px?
   fix drop down elements
 */
 @import './reset.css';
@@ -17,17 +17,18 @@ body {
   background-color: $concrete;
 }
 
-#footer-container,
+.top-logo a{
+  display: flex;
+  justify-content: center;
+  min-width: 600px;
+}
+
 .topnav {
   display: flex;
   align-items: center;
   overflow: hidden;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: $kashmir-blue;
-
-  .nav-logo {
-    height: 100px;
-  }
 
   a {
     color: $concrete;
@@ -133,6 +134,7 @@ body {
 */
 
 #hero {
+  display: flex;
   postiion: relative;
 }
 
@@ -172,7 +174,9 @@ body {
   align-items: center;
   font-weight: 300;
   font-size: 20px;
-  padding: 50px 500px 50px 50px;
+  text-align: justify;
+
+  padding: 50px 650px 50px 150px;
 
   img {
     height: 150px;
@@ -215,6 +219,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+
 /*Grid for footer------------------------------------------------------*/
 .grid-container {
   display: grid;
@@ -285,21 +292,18 @@ body {
 .foot-cont-bottom {
   grid-area: foot-cont-bottom;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  //align-items: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
   border-style: solid;
   border-color: black;
   border-width: medium;
-  flex-shring: 1;
 }
 
-.seals {
-  //padding-left: 10px;
-  //padding-right: 10px;
+.seals{
+  height: 75px;
 }
+
 /*Media Queries-----------------------------------------------------------------*/
 //fix me
 @media screen and (max-width: 600px) {

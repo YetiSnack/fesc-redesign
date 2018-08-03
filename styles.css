@@ -1,7 +1,7 @@
 /*TODO:
   clean up unused elements
   nest elements to reduce repetition
-  fix media queries (resize icons / images for smaller screens)
+  fix media queries (resize icons / images for smaller screens) 821px?
   fix drop down elements
 */
 @import './reset.css';
@@ -10,19 +10,19 @@ body {
   background-color: #f2f2f2;
 }
 
-#footer-container,
+.top-logo a {
+  display: flex;
+  justify-content: center;
+  min-width: 600px;
+}
+
 .topnav {
   display: flex;
   align-items: center;
   overflow: hidden;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #4c7391;
 }
-#footer-container .nav-logo,
-.topnav .nav-logo {
-  height: 100px;
-}
-#footer-container a,
 .topnav a {
   color: #f2f2f2;
   text-align: center;
@@ -30,11 +30,9 @@ body {
   font-size: 25px;
   font-weight: 300;
 }
-#footer-container a:hover,
 .topnav a:hover {
   color: #8bb0d1;
 }
-#footer-container input[type=text],
 .topnav input[type=text] {
   padding: 6px;
   margin-top: 8px;
@@ -42,7 +40,6 @@ body {
   border: none;
   display: inline-block;
 }
-#footer-container .search-container button,
 .topnav .search-container button {
   float: right;
   padding: 6px 10px;
@@ -53,7 +50,6 @@ body {
   border: none;
   cursor: pointer;
 }
-#footer-container .icon,
 .topnav .icon {
   display: none;
 }
@@ -121,6 +117,7 @@ body {
 }
 */
 #hero {
+  display: flex;
   postiion: relative;
 }
 
@@ -160,7 +157,8 @@ body {
   align-items: center;
   font-weight: 300;
   font-size: 20px;
-  padding: 50px 500px 50px 50px;
+  text-align: justify;
+  padding: 50px 650px 50px 150px;
 }
 .content-top img {
   height: 150px;
@@ -272,14 +270,16 @@ body {
 .foot-cont-bottom {
   grid-area: foot-cont-bottom;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   padding-top: 15px;
   padding-bottom: 15px;
   border-style: solid;
   border-color: black;
   border-width: medium;
-  flex-shring: 1;
+}
+
+.seals {
+  height: 75px;
 }
 
 /*Media Queries-----------------------------------------------------------------*/
