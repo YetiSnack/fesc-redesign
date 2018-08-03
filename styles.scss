@@ -164,24 +164,116 @@ body {
   grid-template-areas: "content-top" "content-bottom";
 }
 
-.content-top {
-  grid-area: content-top;
+.content-top{
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "content-top-left" "content-top-right";
+}
+
+.content-top-left{
+  grid-area: content-top-left;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grie-template-areas: "text-grid-container";
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // font-weight: 300;
+  // font-size: 20px;
+  // text-align: justify;
   border-style: solid;
   border-width: medium;
   border-color: black;
+  //padding: 150px 50px 30px 150px;
+  //margin-top: 100px;
+  //margin-bottom: 100px;
+  margin: 100px 100px 100px 100px;
+}
+
+.text-grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "row-1" "row-2" "row-3" "row-4" "row-5";
+}
+
+.row-1 { grid-area: row-1;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 300;
   font-size: 20px;
   text-align: justify;
-
-  padding: 50px 650px 50px 150px;
-
-  img {
-    height: 150px;
-  }
+  margin-bottom: 20px;
 }
+
+.row-2 { grid-area: row-2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.row-3 { grid-area: row-3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.row-4 { grid-area: row-4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.row-5 { grid-area: row-5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: justify;
+}
+
+// div[att^="row-"]{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-weight: 300;
+//   font-size: 30px;
+//   text-align: justify;
+// }
+
+
+
+
+
+.content.top-right{
+  grid-area: content-top-right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+}
+
+
+
 
 .content-bottom {
   display: grid;
@@ -235,7 +327,7 @@ body {
 .foot-cont-top {
   display: grid;
   grid-area: foot-cont-top;
-  grid-template-columns: 0.8fr 1.4fr 0.8fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "foot-top-left-cont foot-top-mid-cont foot-top-right-cont";
 }
@@ -245,14 +337,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 15px;
+  padding: 30px 30px 30px 30px;
 }
 
 .foot-top-mid-cont {
   display: grid;
   grid-area: foot-top-mid-cont;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr .5fr;
   grid-template-areas: "foot-top-mid-upper-cont" "foot-top-mid-lower-cont";
 }
 
@@ -263,21 +355,50 @@ body {
   align-items: center;
 
   img {
-    height: 150px;
+    height: 200px;
   }
 }
 
 .foot-top-mid-lower-cont {
+  display: grid;
   grid-area: foot-top-mid-lower-cont;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "soc-message" "soc-icon-cont";
+}
+
+
+.soc-message{
+  grid-area: soc-message;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  color: $concrete;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+
+}
+.soc-icon-cont{
+  grid-area: soc-icon-cont;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
   a {
     text-decoration: none;
     color: $san-juan;
+    padding: 10px 0px 20px 0px;
+  }
+
+  i{
+    font-size: 40px;
+    padding: 0px 10px 0px 10px;
+    //height: 20px;
   }
 }
+
+
 
 .foot-top-right-cont {
   grid-area: foot-top-right-cont;
