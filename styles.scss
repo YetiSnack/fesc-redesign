@@ -12,12 +12,21 @@ $san-juan: #163D59;
 $tuscany: #c2672e; //$main-font: 'Noto Sans', sans-serif;
 $main-font: 'Roboto', sans-serif;
 
-body {
-  font: 100% $main-font;
-  background-color: $concrete;
+.parallax {
+  background-image: url("./images/solar-and-turbine.jpeg");
+  min-height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.top-logo a{
+body {
+  font: 100% $main-font;
+  //background-color: $concrete;
+}
+
+.top-logo a {
   display: flex;
   justify-content: center;
   min-width: 600px;
@@ -132,7 +141,6 @@ body {
   display: block;
 }
 */
-
 #hero {
   display: flex;
   postiion: relative;
@@ -164,7 +172,7 @@ body {
   grid-template-areas: "content-top" "content-bottom";
 }
 
-.content-top{
+.content-top {
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 1fr;
@@ -172,7 +180,7 @@ body {
   grid-template-areas: "content-top-left" "content-top-right";
 }
 
-.content-top-left{
+.content-top-left {
   grid-area: content-top-left;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -189,7 +197,10 @@ body {
   //padding: 150px 50px 30px 150px;
   //margin-top: 100px;
   //margin-bottom: 100px;
-  margin: 100px 100px 100px 100px;
+  //margin: 50px;
+  margin-left: 50px;
+  padding: 50px 25px 25px 50px;
+  background-color: $concrete;
 }
 
 .text-grid-container {
@@ -200,7 +211,8 @@ body {
   grid-template-areas: "row-1" "row-2" "row-3" "row-4" "row-5";
 }
 
-.row-1 { grid-area: row-1;
+.row-1 {
+  grid-area: row-1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,7 +222,8 @@ body {
   margin-bottom: 20px;
 }
 
-.row-2 { grid-area: row-2;
+.row-2 {
+  grid-area: row-2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,7 +233,8 @@ body {
   margin-bottom: 20px;
 }
 
-.row-3 { grid-area: row-3;
+.row-3 {
+  grid-area: row-3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,7 +244,8 @@ body {
   margin-bottom: 20px;
 }
 
-.row-4 { grid-area: row-4;
+.row-4 {
+  grid-area: row-4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,7 +255,8 @@ body {
   margin-bottom: 20px;
 }
 
-.row-5 { grid-area: row-5;
+.row-5 {
+  grid-area: row-5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,7 +264,6 @@ body {
   font-size: 20px;
   text-align: justify;
 }
-
 // div[att^="row-"]{
 //   display: flex;
 //   justify-content: center;
@@ -258,11 +273,7 @@ body {
 //   text-align: justify;
 // }
 
-
-
-
-
-.content.top-right{
+.content.top-right {
   grid-area: content-top-right;
   display: flex;
   justify-content: center;
@@ -271,9 +282,6 @@ body {
   border-width: medium;
   border-color: black;
 }
-
-
-
 
 .content-bottom {
   display: grid;
@@ -304,17 +312,16 @@ body {
 }
 
 .content-bottom-right {
-  grid-area: content-bottom-right;  border-style: solid;
-    border-width: medium;
-    border-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: content-bottom-right;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
 /*Grid for footer------------------------------------------------------*/
+
 .grid-container {
   display: grid;
   height: 100%;
@@ -337,14 +344,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 30px 30px 30px;
+  padding: 30px;
 }
 
 .foot-top-mid-cont {
   display: grid;
   grid-area: foot-top-mid-cont;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr .5fr;
+  grid-template-rows: 1fr 0.5fr;
   grid-template-areas: "foot-top-mid-upper-cont" "foot-top-mid-lower-cont";
 }
 
@@ -367,8 +374,7 @@ body {
   grid-template-areas: "soc-message" "soc-icon-cont";
 }
 
-
-.soc-message{
+.soc-message {
   grid-area: soc-message;
   display: flex;
   justify-content: center;
@@ -377,9 +383,9 @@ body {
   font-size: 25px;
   font-weight: 300;
   font-style: italic;
-
 }
-.soc-icon-cont{
+
+.soc-icon-cont {
   grid-area: soc-icon-cont;
   display: flex;
   justify-content: center;
@@ -388,17 +394,15 @@ body {
   a {
     text-decoration: none;
     color: $san-juan;
-    padding: 10px 0px 20px 0px;
+    padding: 10px 0 20px;
   }
 
-  i{
+  i {
     font-size: 40px;
-    padding: 0px 10px 0px 10px;
+    padding: 0 10px;
     //height: 20px;
   }
 }
-
-
 
 .foot-top-right-cont {
   grid-area: foot-top-right-cont;
@@ -421,10 +425,9 @@ body {
   border-width: medium;
 }
 
-.seals{
+.seals {
   height: 75px;
 }
-
 /*Media Queries-----------------------------------------------------------------*/
 //fix me
 @media screen and (max-width: 600px) {
