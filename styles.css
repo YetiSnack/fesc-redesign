@@ -18,48 +18,71 @@ body {
   font: 100% "Roboto", sans-serif;
 }
 
-.top-logo a {
-  display: flex;
-  justify-content: center;
-  min-width: 600px;
-}
-
 .topnav {
   display: flex;
   align-items: center;
   overflow: hidden;
   justify-content: space-around;
-  background-color: #4c7391;
+  background-color: #163D59;
+  min-height: 100px;
 }
-.topnav a {
+.topnav .topnav-logo {
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+.topnav .topnav-logo a {
+  display: flex;
+  max-width: 260px;
+}
+.topnav .topnav-links {
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+.topnav .topnav-links a {
   color: #f2f2f2;
   text-align: center;
   text-decoration: none;
   font-size: 25px;
   font-weight: 300;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
 }
-.topnav a:hover {
+.topnav .topnav-links a:hover {
   color: #8bb0d1;
 }
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-  display: inline-block;
+.topnav .topnav-searchbar .search-form {
+  width: 100%;
+  position: relative;
 }
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
+.topnav .topnav-searchbar .searchTerm {
+  float: left;
+  width: 100%;
+  border: 2px solid #333;
+  padding: 5px;
+  height: 20px;
+  font-size: 18px;
+  outline: none;
+}
+.topnav .topnav-searchbar .searchTerm:focus {
+  color: #000;
+}
+.topnav .topnav-searchbar .searchButton {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 34px;
+  border: 2px solid #000000;
+  background: #f2f2f2;
+  text-align: center;
+  color: #000;
   cursor: pointer;
-}
-.topnav .icon {
-  display: none;
+  font-size: 20px;
 }
 
 /*
@@ -383,7 +406,7 @@ body {
   padding-bottom: 15px;
   border-style: solid;
   border-color: black;
-  border-width: medium;
+  border-width: thin;
 }
 
 .seals {

@@ -7,10 +7,11 @@
 @import './reset.css';
 $concrete: #f2f2f2;
 $polo-blue: #8bb0d1;
-$kashmir-blue: #4c7391; //$san-juan: #2a516d;
-$san-juan: #163D59;
+$kashmir-blue: #4c7391;
+$san-juan: #163D59; //$san-juan: #2a516d;
 $tuscany: #c2672e; //$main-font: 'Noto Sans', sans-serif;
 $main-font: 'Roboto', sans-serif;
+$header-font: 'Roboto Slab', serif;
 
 .parallax {
   background-image: url("./images/solar-and-turbine.jpeg");
@@ -26,58 +27,96 @@ body {
   //background-color: $concrete;
 }
 
-.top-logo a {
-  display: flex;
-  justify-content: center;
-  min-width: 600px;
-}
-
 .topnav {
   display: flex;
   align-items: center;
   overflow: hidden;
   justify-content: space-around;
-  background-color: $kashmir-blue;
+  background-color: $san-juan;
+  min-height: 100px;
 
-  a {
-    color: $concrete;
+  //logo box
+  .topnav-logo {
+    a {
+      display: flex;
+      max-width: 260px;
+    }
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    //margin-left: 50px;
+  }
+
+  //links box
+  .topnav-links {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    a {
+      color: $concrete;
+      text-align: center;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 300;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-family: $header-font;
+      font-weight: 400;
+
+      &:hover{
+        color: $polo-blue;
+      }
+    }
+
+  }
+  //TODO: fix styling here
+  //searchbar box
+
+  .topnav-searchbar {
+    .search-form {
+      width: 100%;
+      position: relative
+    }
+
+    .searchTerm {
+      float: left;
+      width: 100%;
+      border: 2px solid #333;
+      padding: 5px;
+      height: 20px;
+      font-size: 18px;
+      outline: none;
+      &:focus{
+        color: #000;
+      }
+    }
+
+
+    .searchButton {
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 34px;
+    border: 2px solid #000000;
+    background: #f2f2f2;
     text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 300;
-  }
-
-  a:hover {
-    color: $polo-blue;
-  }
-
-  .search-container {
-    //float: right;
-    //text-align: center;
-  }
-
-  input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-    display: inline-block;
-  }
-
-  .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
+    color: #000;
     cursor: pointer;
+    font-size: 20px;
   }
 
-  .icon {
-    display: none;
+
   }
+
+
+
+
+
+
+
+
 }
 /*
 //Clean me up
@@ -141,6 +180,7 @@ body {
   display: block;
 }
 */
+
 #hero {
   display: flex;
   postiion: relative;
@@ -321,7 +361,6 @@ body {
   align-items: center;
 }
 /*Grid for footer------------------------------------------------------*/
-
 .grid-container {
   display: grid;
   height: 100%;
@@ -422,7 +461,7 @@ body {
   padding-bottom: 15px;
   border-style: solid;
   border-color: black;
-  border-width: medium;
+  border-width: thin;
 }
 
 .seals {
