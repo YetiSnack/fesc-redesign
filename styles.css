@@ -75,68 +75,6 @@ body {
   font-size: 20px;
 }
 
-/*
-//Clean me up
-.active {
-  //background-color: $polo-blue;
-  color: $concrete;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-  .dropbtn {
-    font-size: 20px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: $san-juan;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
-  a {
-    float: none;
-    //color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  a:hover {
-    background-color: $concrete;
-    color: black;
-  }
-
-}
-
-
-
-.dropdown:hover .dropbtn,
- {
-  //background-color: $san-juan;
-  color: $polo-blue;
-  //color: $concrete;
-}
-
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-*/
 #hero {
   display: flex;
   postiion: relative;
