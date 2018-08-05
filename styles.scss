@@ -32,21 +32,86 @@ html{
 
 .main{
   display: inline-flex;
-  margin: 50px;
+  margin: 25px;
   justify-content: space-around;
   // border-style: solid;
   // border-color: white;
   // border-width: medium;
 }
 
-.calendar{
+.side-box{
   display: flex;
-  margin-left: 50px;
+  //margin-left: 25px;
+  //margin-right: auto;
   flex-direction: column;
-  background-color: $concrete-lite;
-  min-height: 800px;
-  max-width: 350px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  justify-content: space-around;
+  //background-color: $concrete-lite;
+  //min-height: 800px;
+  //max-width: 425px;
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  img{
+    max-width: 325px;
+  }
+
+
+
+  .calendar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $concrete-lite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    .calendar-title{
+      font-family: $main-font;
+      font-size: 36px;
+      color: $kashmir-blue;
+      text-align: center;
+      padding-top: 25px;
+      text-decoration: underline;
+      font-weight: 300;
+    }
+    .calendar-entry{
+      display: flex;
+      flex-direction: row;
+      .calendar-entry-cal-date{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 22px;
+        .calendar-entry-month, .calendar-entry-day{
+          font-weight: 300;
+          color: $kashmir-blue;
+        }
+        .calendar-entry-date{
+          font-family: $header-font;
+          font-size: 24px;
+          color: $san-juan;
+        }
+      }
+      .calendar-entry-info{
+        padding-left: 30px;
+        .calendar-entry-info-title{
+          font-family: $header-font;
+          font-size: 24px;
+          color: $san-juan;
+        }
+      }
+
+      //justify-content: space-between;
+    }
+
+  }
+
+  .video{
+    background-color: $concrete-lite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    padding: 22px;
+    iframe{
+      width: 450px;
+      height: 253px;
+    }
+  }
 }
 
 
