@@ -16,6 +16,7 @@ body {
   justify-content: space-around;
   background-color: #163D59;
   min-height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 .topnav .topnav-logo a {
   display: flex;
@@ -155,7 +156,9 @@ html {
 
 #hero {
   display: flex;
+  margin-top: 20px;
   postiion: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 /*/
