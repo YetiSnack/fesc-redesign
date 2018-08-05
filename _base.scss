@@ -1,4 +1,5 @@
 $concrete: #f2f2f2;
+$concrete-lite: rgba(242,242,242,.85);
 $polo-blue: #8bb0d1;
 $kashmir-blue: #4c7391;
 $san-juan: #163D59; //$san-juan: #2a516d;
@@ -8,5 +9,5 @@ $header-font: 'Roboto Slab', serif;
 
 body {
   font: 100% $main-font;
-  background-image: url("./images/bg1.png");
+  background-image: url("./images/bg2.png");
 }

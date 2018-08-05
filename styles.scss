@@ -29,9 +29,30 @@ html{
   overflow: auto;
 }
 
+
+.main{
+  display: inline-flex;
+  margin: 50px;
+  justify-content: space-around;
+  // border-style: solid;
+  // border-color: white;
+  // border-width: medium;
+}
+
+.calendar{
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  background-color: $concrete-lite;
+  min-height: 800px;
+  max-width: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+
 .contents{
   display: inline-flex;
-  margin: 100px;
+  margin: 25px;
   justify-content: space-around;
 
 //guidelines
@@ -48,17 +69,38 @@ html{
   max-width: 350px;
   background-color: rgba(242,242,242,.9);
   margin:15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 
 
   img{
     max-width: 350px;
   }
-  p{
-    font-size: 17px;
+  .contents-panel-text{
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.7;
   }
+
+  .contents-panel-headline{
+
+    text-align: left;
+    color: $kashmir-blue;
+    // border-style: solid;
+    // border-color: black;
+    // border-width: thin;
+    p{
+      color: $san-juan;
+      font-size: 24px;
+      font-weight: 400;
+      font-family: $header-font;
+
+    }
+  }
+}
+
+
+.shadowed{
+//box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 #hero {
