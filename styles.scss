@@ -65,6 +65,7 @@ html{
 .contents-panel{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 22px;
   max-width: 350px;
   background-color: rgba(242,242,242,.9);
@@ -76,9 +77,35 @@ html{
     max-width: 350px;
   }
   .contents-panel-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.7;
+    //guidelines
+      // border-style: solid;
+      // border-color: black;
+      // border-width: thin;
+  }
+
+  a{
+    text-decoration: none;
+    p{
+      // border-style: solid;
+      // border-color: black;
+      // border-width: thin;
+      text-align: right;
+      font-size: 20px;
+      color: $san-juan;
+      padding-right: 35px;
+      font-weight: 400;
+      font-style: italic;
+      &:hover{
+        color: $polo-blue;
+      }
+    }
+
   }
 
   .contents-panel-headline{
@@ -88,13 +115,14 @@ html{
     // border-style: solid;
     // border-color: black;
     // border-width: thin;
+
     p{
       color: $san-juan;
       font-size: 24px;
       font-weight: 400;
       font-family: $header-font;
-
     }
+
   }
 }
 
