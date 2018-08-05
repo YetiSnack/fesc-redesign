@@ -4,12 +4,25 @@
   fix media queries (resize icons / images for smaller screens) 821px?
   fix drop down elements
 */
+
+
 @import 'base';
 @import 'topnav';
+$shadow-color: rgba(50,50,50, 1);
+
 
 html{
   overflow-y: hidden;
 }
+
+/* ???
+.shadowed{
+  -moz-box-shadow: 50px, 100px, $shadow-color;
+  //border-style: solid;
+  //border-color: black;
+  //border-width: thin;
+}
+*/
 
 .page-wrap {
   height: 110vh;
@@ -20,25 +33,19 @@ html{
   display: inline-flex;
   margin: 100px;
   justify-content: space-around;
-  img{
+
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+}
+
+.contents img{
     width:50%;
     border-style: solid;
     border-color: black;
     border-width: thin;
     margin: 0px 20px 0px 20px;
   }
-  border-style: solid;
-  border-color: white;
-  border-width: thin;
-}
-
-.frame {
-  //margin: 0.75rem;
-  //display: inline-block;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
-}
 
 #hero {
   display: flex;
@@ -248,6 +255,9 @@ html{
   justify-content: center;
   align-items: center;
   padding: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
 }
 
 .foot-top-mid-cont {
@@ -256,6 +266,9 @@ html{
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.5fr;
   grid-template-areas: "foot-top-mid-upper-cont" "foot-top-mid-lower-cont";
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
 }
 
 .foot-top-mid-upper-cont {
@@ -267,6 +280,9 @@ html{
   img {
     height: 200px;
   }
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
 }
 
 .foot-top-mid-lower-cont {
@@ -286,6 +302,9 @@ html{
   font-size: 25px;
   font-weight: 300;
   font-style: italic;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
 }
 
 .soc-icon-cont {
@@ -331,6 +350,11 @@ html{
 .seals {
   height: 75px;
 }
+
+.buffer{
+  min-height: 100px;
+}
+
 /*Media Queries-----------------------------------------------------------------*/
 //fix me
 @media screen and (max-width: 600px) {

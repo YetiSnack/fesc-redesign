@@ -72,6 +72,14 @@ html {
   overflow-y: hidden;
 }
 
+/* ???
+.shadowed{
+  -moz-box-shadow: 50px, 100px, $shadow-color;
+  //border-style: solid;
+  //border-color: black;
+  //border-width: thin;
+}
+*/
 .page-wrap {
   height: 110vh;
   overflow: auto;
@@ -85,18 +93,13 @@ html {
   border-color: white;
   border-width: thin;
 }
+
 .contents img {
   width: 50%;
   border-style: solid;
   border-color: black;
   border-width: thin;
   margin: 0px 20px 0px 20px;
-}
-
-.frame {
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
 }
 
 #hero {
@@ -272,6 +275,9 @@ html {
   justify-content: center;
   align-items: center;
   padding: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
 }
 
 .foot-top-mid-cont {
@@ -280,6 +286,9 @@ html {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.5fr;
   grid-template-areas: "foot-top-mid-upper-cont" "foot-top-mid-lower-cont";
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
 }
 
 .foot-top-mid-upper-cont {
@@ -287,6 +296,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
 }
 .foot-top-mid-upper-cont img {
   height: 200px;
@@ -309,6 +321,9 @@ html {
   font-size: 25px;
   font-weight: 300;
   font-style: italic;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
 }
 
 .soc-icon-cont {
@@ -350,6 +365,10 @@ html {
 
 .seals {
   height: 75px;
+}
+
+.buffer {
+  min-height: 100px;
 }
 
 /*Media Queries-----------------------------------------------------------------*/
