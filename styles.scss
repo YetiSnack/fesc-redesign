@@ -4,31 +4,62 @@
   fix media queries (resize icons / images for smaller screens) 821px?
   fix drop down elements
 */
-
 @import 'base';
 @import 'topnav';
 
+html{
+  overflow-y: hidden;
+}
+
+.page-wrap {
+  height: 110vh;
+  overflow: auto;
+}
+
+.contents{
+  display: inline-flex;
+  margin: 100px;
+  justify-content: space-around;
+  img{
+    width:50%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    margin: 0px 20px 0px 20px;
+  }
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+}
+
+.frame {
+  //margin: 0.75rem;
+  //display: inline-block;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
 
 #hero {
   display: flex;
   postiion: relative;
 }
 
-#hero-content {
-  position: absolute;
-  top: 150px;
-  left: 75px;
-  padding: 20px;
-  background-color: rgba(42,81,109,.4);
-  color: #ffffff;
-  font-size: 35px;
-  font-style: italic;
-  font-weight: 500;
-}
-
-.fab {
-  font-size: 100px;
-}
+// #hero-content {
+//   position: absolute;
+//   top: 150px;
+//   left: 75px;
+//   padding: 20px;
+//   background-color: rgba(42,81,109,.4);
+//   color: #ffffff;
+//   font-size: 35px;
+//   font-style: italic;
+//   font-weight: 500;
+// }
+//???
+// .fab {
+//   font-size: 100px;
+// }
 /*/
 // main content styling --------------------------------------------*/
 
@@ -188,8 +219,9 @@
   justify-content: center;
   align-items: center;
 }
-/*Grid for footer------------------------------------------------------*/
 
+
+/*Grid for footer------------------------------------------------------*/
 .grid-container {
   display: grid;
   height: 100%;
@@ -197,6 +229,9 @@
   grid-template-rows: 1.6fr 0.4fr;
   grid-template-areas: "foot-cont-top" "foot-cont-bottom";
   background-color: $kashmir-blue;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
 }
 
 .foot-cont-top {

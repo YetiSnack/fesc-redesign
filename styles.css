@@ -6,6 +6,7 @@
 */
 body {
   font: 100% "Roboto", sans-serif;
+  background-image: url("./images/bg1.png");
 }
 
 .topnav {
@@ -16,11 +17,6 @@ body {
   background-color: #163D59;
   min-height: 100px;
 }
-.topnav .topnav-logo {
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
-}
 .topnav .topnav-logo a {
   display: flex;
   max-width: 260px;
@@ -28,9 +24,6 @@ body {
 .topnav .topnav-links {
   display: flex;
   justify-content: space-between;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
 }
 .topnav .topnav-links a {
   color: #f2f2f2;
@@ -75,25 +68,40 @@ body {
   font-size: 20px;
 }
 
+html {
+  overflow-y: hidden;
+}
+
+.page-wrap {
+  height: 110vh;
+  overflow: auto;
+}
+
+.contents {
+  display: inline-flex;
+  margin: 100px;
+  justify-content: space-around;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+}
+.contents img {
+  width: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  margin: 0px 20px 0px 20px;
+}
+
+.frame {
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+
 #hero {
   display: flex;
   postiion: relative;
-}
-
-#hero-content {
-  position: absolute;
-  top: 150px;
-  left: 75px;
-  padding: 20px;
-  background-color: rgba(42, 81, 109, 0.4);
-  color: #ffffff;
-  font-size: 35px;
-  font-style: italic;
-  font-weight: 500;
-}
-
-.fab {
-  font-size: 100px;
 }
 
 /*/
@@ -245,6 +253,9 @@ body {
   grid-template-rows: 1.6fr 0.4fr;
   grid-template-areas: "foot-cont-top" "foot-cont-bottom";
   background-color: #4c7391;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
 }
 
 .foot-cont-top {

@@ -11,18 +11,12 @@
       display: flex;
       max-width: 260px;
     }
-    border-style: solid;
-    border-color: black;
-    border-width: thin;
-    //margin-left: 50px;
+
   }
   //links box
   .topnav-links {
     display: flex;
     justify-content: space-between;
-    border-style: solid;
-    border-color: black;
-    border-width: thin;
 
     a {
       color: $concrete;
