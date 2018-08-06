@@ -172,7 +172,7 @@ body {
   justify-content: space-between;
   padding: 22px;
   max-width: 350px;
-  background-color: rgba(242, 242, 242, 0.9);
+  background-color: rgba(242, 242, 242, 0.85);
   margin: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
@@ -277,47 +277,68 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  margin: 50px 200px 50px 200px;
-  border-style: solid;
-  border-color: white;
-  border-width: thick;
+  margin: 50px 100px 50px 100px;
 }
 .research-content-outer-box .research-content-inner-box {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  border-style: solid;
-  border-color: black;
-  border-width: medium;
-  margin: 20px;
 }
 .research-content-outer-box .research-content-inner-box .research-content-heading {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  border-style: solid;
-  border-color: blue;
-  border-width: thin;
-  margin: 20px;
+  padding: 0px 100px 0px 100px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+.research-content-outer-box .research-content-inner-box .research-content-heading h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  color: #4c7391;
 }
 .research-content-outer-box .research-content-inner-box .research-content-panels-box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
-  border-style: solid;
-  border-color: yellow;
-  border-width: thin;
-  margin: 20px;
+  margin: 20px 0px 20px 0px;
 }
 .research-content-outer-box .research-content-inner-box .research-content-panels-box .research-content-panel {
   display: flex;
-  flex-direction: column;
-  border-style: dashed;
-  border-color: red;
-  border-width: thin;
-  margin: 20px;
-  padding: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+.research-content-outer-box .research-content-inner-box .research-content-panels-box .research-content-panel .research-content-panel-info {
+  max-width: 700px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 40px;
+}
+.research-content-outer-box .research-content-inner-box .research-content-panels-box .research-content-panel .research-content-panel-info .research-content-panel-info-heading {
+  text-align: left;
+  font-family: "Roboto Slab", serif;
+  font-size: 22px;
+  color: #4c7391;
+}
+.research-content-outer-box .research-content-inner-box .research-content-panels-box .research-content-panel .research-content-panel-status {
+  max-width: 300px;
+}
+
+.shadowed {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 .buffer {
