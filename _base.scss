@@ -4,8 +4,13 @@ $polo-blue: #8bb0d1;
 $kashmir-blue: #4c7391;
 $san-juan: #163D59; //$san-juan: #2a516d;
 $tuscany: #c2672e; //$main-font: 'Noto Sans', sans-serif;
+$shadow-color: rgba(50,50,50, 1);
 $main-font: 'Roboto', sans-serif;
 $header-font: 'Roboto Slab', serif;
+
+html{
+  overflow-y: hidden;
+}
 
 body {
   font: 100% $main-font;
