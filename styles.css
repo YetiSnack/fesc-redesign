@@ -16,6 +16,7 @@ body {
 .topnav {
   max-width: 1880px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   overflow: hidden;
   justify-content: space-around;
@@ -131,130 +132,13 @@ body {
   padding: 10px;
 }
 
+.seals {
+  height: 75px;
+}
+
 .page-wrap {
   height: 110vh;
   overflow: auto;
-}
-
-.main {
-  display: inline-flex;
-  margin: 25px;
-  justify-content: space-around;
-}
-
-.side-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.side-box img {
-  max-width: 325px;
-}
-.side-box .calendar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgba(242, 242, 242, 0.85);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-}
-.side-box .calendar .calendar-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 36px;
-  color: #4c7391;
-  text-align: center;
-  padding-top: 25px;
-  text-decoration: underline;
-  font-weight: 300;
-}
-.side-box .calendar .calendar-entry {
-  display: flex;
-  flex-direction: row;
-}
-.side-box .calendar .calendar-entry .calendar-entry-cal-date {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-left: 22px;
-}
-.side-box .calendar .calendar-entry .calendar-entry-cal-date .calendar-entry-day,
-.side-box .calendar .calendar-entry .calendar-entry-cal-date .calendar-entry-month {
-  font-weight: 300;
-  color: #4c7391;
-}
-.side-box .calendar .calendar-entry .calendar-entry-cal-date .calendar-entry-date {
-  font-family: "Roboto Slab", serif;
-  font-size: 24px;
-  color: #163D59;
-}
-.side-box .calendar .calendar-entry .calendar-entry-info {
-  padding-left: 30px;
-}
-.side-box .calendar .calendar-entry .calendar-entry-info .calendar-entry-info-title {
-  font-family: "Roboto Slab", serif;
-  font-size: 24px;
-  color: #163D59;
-}
-.side-box .video {
-  background-color: rgba(242, 242, 242, 0.85);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-  padding: 22px;
-}
-.side-box .video iframe {
-  width: 450px;
-  height: 253px;
-}
-
-.contents {
-  display: inline-flex;
-  margin: 25px;
-  justify-content: space-around;
-}
-
-.contents-panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 22px;
-  max-width: 350px;
-  background-color: rgba(242, 242, 242, 0.9);
-  margin: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-}
-.contents-panel img {
-  max-width: 350px;
-}
-.contents-panel .contents-panel-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.7;
-}
-.contents-panel a {
-  text-decoration: none;
-}
-.contents-panel a p {
-  text-align: right;
-  font-size: 20px;
-  color: #163D59;
-  padding-right: 35px;
-  font-weight: 400;
-  font-style: italic;
-}
-.contents-panel a p:hover {
-  color: #8bb0d1;
-}
-.contents-panel .contents-panel-headline {
-  text-align: left;
-  color: #4c7391;
-}
-.contents-panel .contents-panel-headline p {
-  color: #163D59;
-  font-size: 24px;
-  font-weight: 400;
-  font-family: "Roboto Slab", serif;
 }
 
 #hero {
@@ -265,17 +149,158 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
-.seals {
-  height: 75px;
+.main {
+  display: inline-flex;
+  margin: 25px;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main .contents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 25px;
+  justify-content: space-around;
+}
+.main .contents .contents-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px;
+  max-width: 350px;
+  background-color: rgba(242, 242, 242, 0.9);
+  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+.main .contents .contents-panel img {
+  max-width: 350px;
+}
+.main .contents .contents-panel .contents-panel-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+.main .contents .contents-panel a {
+  text-decoration: none;
+}
+.main .contents .contents-panel a p {
+  text-align: right;
+  font-size: 20px;
+  color: #163D59;
+  padding-right: 35px;
+  font-weight: 400;
+  font-style: italic;
+}
+.main .contents .contents-panel a p:hover {
+  color: #8bb0d1;
+}
+.main .contents .contents-panel .contents-panel-headline {
+  text-align: left;
+  color: #4c7391;
+}
+.main .contents .contents-panel .contents-panel-headline p {
+  color: #163D59;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+}
+.main .side-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main .side-box .calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  background-color: rgba(242, 242, 242, 0.85);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+.main .side-box .calendar .calendar-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  color: #4c7391;
+  text-align: center;
+  padding-top: 25px;
+  text-decoration: underline;
+  font-weight: 300;
+}
+.main .side-box .calendar .calendar-entry {
+  display: flex;
+  flex-direction: row;
+}
+.main .side-box .calendar .calendar-entry .calendar-entry-cal-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 22px;
+}
+.main .side-box .calendar .calendar-entry .calendar-entry-cal-date .calendar-entry-day,
+.main .side-box .calendar .calendar-entry .calendar-entry-cal-date .calendar-entry-month {
+  font-weight: 300;
+  color: #4c7391;
+}
+.main .side-box .calendar .calendar-entry .calendar-entry-cal-date .calendar-entry-date {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  color: #163D59;
+}
+.main .side-box .calendar .calendar-entry .calendar-entry-info {
+  padding-left: 30px;
+}
+.main .side-box .calendar .calendar-entry .calendar-entry-info .calendar-entry-info-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  color: #163D59;
+}
+.main .side-box .video {
+  display: flex;
+  background-color: rgba(242, 242, 242, 0.85);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+  padding: 22px;
+}
+.main .side-box .video iframe {
+  width: 450px;
+  height: 253px;
 }
 
 .buffer {
   min-height: 150px;
 }
 
+@media screen and (max-width 1900px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .side-box {
+    flex-direction: row;
+  }
+}
 @media screen and (max-width: 1680px) {
-  .topnav .topnav-searchbar {
-    display: none;
+  .topnav {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 893px) {
+  .contents-panel {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topnav-links {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .topnav-searchbar .search-form {
+    left: -10px;
   }
 }
 

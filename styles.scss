@@ -13,148 +13,6 @@
   overflow: auto;
 }
 
-.main {
-  display: inline-flex;
-  margin: 25px;
-  justify-content: space-around;
-}
-
-.side-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
-  img {
-    max-width: 325px;
-  }
-
-  .calendar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: $concrete-lite;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-
-    .calendar-title {
-      font-family: $main-font;
-      font-size: 36px;
-      color: $kashmir-blue;
-      text-align: center;
-      padding-top: 25px;
-      text-decoration: underline;
-      font-weight: 300;
-    }
-
-    .calendar-entry {
-      display: flex;
-      flex-direction: row;
-
-      .calendar-entry-cal-date {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 22px;
-
-        .calendar-entry-day,
-        .calendar-entry-month {
-          font-weight: 300;
-          color: $kashmir-blue;
-        }
-
-        .calendar-entry-date {
-          font-family: $header-font;
-          font-size: 24px;
-          color: $san-juan;
-        }
-      }
-
-      .calendar-entry-info {
-        padding-left: 30px;
-
-        .calendar-entry-info-title {
-          font-family: $header-font;
-          font-size: 24px;
-          color: $san-juan;
-        }
-      }
-    }
-  }
-
-  .video {
-    background-color: $concrete-lite;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-    padding: 22px;
-
-    iframe {
-      width: 450px;
-      height: 253px;
-    }
-  }
-}
-
-.contents {
-  display: inline-flex;
-  margin: 25px;
-  justify-content: space-around;
-}
-
-.contents-panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 22px;
-  max-width: 350px;
-  background-color: rgba(242,242,242,.9);
-  margin: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-
-  img {
-    max-width: 350px;
-  }
-
-  .contents-panel-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.7;
-  }
-
-  a {
-    text-decoration: none;
-
-    p {
-      text-align: right;
-      font-size: 20px;
-      color: $san-juan;
-      padding-right: 35px;
-      font-weight: 400;
-      font-style: italic;
-
-      &:hover {
-        color: $polo-blue;
-      }
-    }
-  }
-
-  .contents-panel-headline {
-    text-align: left;
-    color: $kashmir-blue;
-    p {
-      color: $san-juan;
-      font-size: 24px;
-      font-weight: 400;
-      font-family: $header-font;
-    }
-  }
-}
-
-.shadowed {
-  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-}
-
 #hero {
   display: flex;
   margin-top: 20px;
@@ -163,19 +21,191 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
-.seals {
-  height: 75px;
+.main {
+  display: inline-flex;
+  margin: 25px;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 25px;
+    justify-content: space-around;
+
+    .contents-panel {
+      display: flex;
+      //flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 22px;
+      max-width: 350px;
+      background-color: rgba(242,242,242,.9);
+      margin: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+
+      img {
+        max-width: 350px;
+      }
+
+      .contents-panel-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.7;
+      }
+
+      a {
+        text-decoration: none;
+
+        p {
+          text-align: right;
+          font-size: 20px;
+          color: $san-juan;
+          padding-right: 35px;
+          font-weight: 400;
+          font-style: italic;
+
+          &:hover {
+            color: $polo-blue;
+          }
+        }
+      }
+
+      .contents-panel-headline {
+        text-align: left;
+        color: $kashmir-blue;
+
+        p {
+          color: $san-juan;
+          font-size: 24px;
+          font-weight: 400;
+          font-family: $header-font;
+        }
+      }
+    }
+  }
+
+  .side-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .calendar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 500px;
+      background-color: $concrete-lite;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+
+      .calendar-title {
+        font-family: $main-font;
+        font-size: 36px;
+        color: $kashmir-blue;
+        text-align: center;
+        padding-top: 25px;
+        text-decoration: underline;
+        font-weight: 300;
+      }
+
+      .calendar-entry {
+        display: flex;
+        flex-direction: row;
+
+        .calendar-entry-cal-date {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-left: 22px;
+
+          .calendar-entry-day,
+          .calendar-entry-month {
+            font-weight: 300;
+            color: $kashmir-blue;
+          }
+
+          .calendar-entry-date {
+            font-family: $header-font;
+            font-size: 24px;
+            color: $san-juan;
+          }
+        }
+
+        .calendar-entry-info {
+          padding-left: 30px;
+
+          .calendar-entry-info-title {
+            font-family: $header-font;
+            font-size: 24px;
+            color: $san-juan;
+          }
+        }
+      }
+    }
+
+    .video {
+      display: flex;
+      background-color: $concrete-lite;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+      padding: 22px;
+
+      iframe {
+        width: 450px;
+        height: 253px;
+      }
+    }
+  }
+}
+
+
+
+.shadowed {
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 .buffer {
   min-height: 150px;
 }
 
+@media screen and (max-width 1900px){
+  .main{
+    flex-direction: column;
+  }
+  .side-box{
 
-@media screen and (max-width: 1680px){
-  .topnav .topnav-searchbar{
-    display: none;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .topnav .topnav-searchbar {
+    //display: none;
   }
 
-
+  .topnav {
+    flex-direction: column;
   }
+}
+
+@media screen and (max-width: 893px){
+  .contents-panel{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav-links {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .topnav-searchbar .search-form {
+    left: -10px;
+  }
+}
