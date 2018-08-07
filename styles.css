@@ -339,8 +339,9 @@ body {
 
 .energy-content-outer-box {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin: 50px 100px;
+  margin: 50px 100px 50px 100px;
 }
 .energy-content-outer-box .energy-content-inner-box {
   display: flex;
@@ -355,7 +356,7 @@ body {
   padding: 22px;
 }
 .energy-content-outer-box .energy-content-inner-box .energy-content-info {
-  max-width: 500px;
+  max-width: 575px;
   padding: 22px;
 }
 .energy-content-outer-box .energy-content-inner-box .energy-content-info .energy-content-info-heading {
@@ -380,7 +381,7 @@ body {
   min-height: 118px;
 }
 
-@media screen and (max-width 1900px) {
+@media screen and (max-width: 1900px) {
   .main {
     flex-direction: column;
   }
