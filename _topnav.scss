@@ -22,7 +22,20 @@
     display: flex;
     justify-content: space-between;
 
-    a {
+    .dropbtn{
+      cursor: pointer;
+      background-color: inherit;
+      border: none;
+      outline: none;
+      &:hover{
+          a{
+
+            color:$polo-blue;
+          }
+      }
+    }
+
+    a{
       color: $concrete;
       text-align: center;
       text-decoration: none;

@@ -36,6 +36,15 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.topnav .topnav-links .dropbtn {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+.topnav .topnav-links .dropbtn:hover a {
+  color: #8bb0d1;
+}
 .topnav .topnav-links a {
   color: #f2f2f2;
   text-align: center;
@@ -371,6 +380,29 @@ body {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.7;
+}
+.energy-content-outer-box .energy-content-inner-box .chart-content {
+  margin: 20px;
+  padding: 22px;
+  max-width: 900px;
+}
+.energy-content-outer-box .energy-content-inner-box .chart-content .energy-content-info-heading {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  text-align: center;
+  color: #4c7391;
+}
+.energy-content-outer-box .energy-content-inner-box .chart-content .energy-content-info-text {
+  font-family: "Roboto", sans-serif;
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7;
+  justify-content: center;
+}
+
+.chart-margin {
+  flex-direction: row;
 }
 
 .shadowed {
