@@ -3,8 +3,8 @@
 Redesign current FESC site to ensure accessibility, improve mobile friendliness, optimize performance, enhance functionality, and facilitate ease of use for all site visitors.
 
 ## Audit:
-Site audit was performed using Google Lighthouse. 
-[Lighthouse](https://developers.google.com/web/tools/lighthouse/) is an open-source, automated tool that has audits for performance, accessibility, progressive web apps, and more. 
+Site audit was performed using Google Lighthouse.
+[Lighthouse](https://developers.google.com/web/tools/lighthouse/) is an open-source, automated tool that has audits for performance, accessibility, progressive web apps, and more.
 See the following report for assessment of current FESC site.
 ### Google Lighthouse Report for [http://floridaenergy.ufl.edu/](http://floridaenergy.ufl.edu/)
 ![Google Lighthouse Report: Accessibility, Performance, Progressive Web App, SEO, Best Practices](https://github.com/YetiSnack/fesc-redesign/blob/master/report.jpg)
@@ -32,17 +32,8 @@ Validation of HTML and CSS 2.1 using W3C Validation services in Google Chrome fo
 	-Make site design responsive to screen sizes across a wide array of devices.
 	-Implement missing accessibility features.
 	-Implement performance optimizations specified in Lighthouse report.
-	
-	
-	
-	
-
-	
 
 
 
-
-
-
-
-
+	## Chart type decision
+	I chose to use line charts for this data because each of the types of data contain one series tracked over time.

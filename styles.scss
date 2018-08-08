@@ -36,7 +36,6 @@
 
     .contents-panel {
       display: flex;
-      //flex-wrap: nowrap;
       flex-direction: column;
       justify-content: space-between;
       padding: 22px;
@@ -88,6 +87,10 @@
       }
     }
   }
+
+
+
+
 
   .side-box {
     display: flex;
@@ -161,6 +164,13 @@
     }
   }
 }
+
+
+
+
+
+
+
 
 .research-content-outer-box {
   display: flex;
