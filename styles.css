@@ -157,7 +157,7 @@ body {
 #hero {
   display: flex;
   margin-top: 20px;
-  postiion: relative;
+  position: relative;
   max-width: 1880px;
 }
 
@@ -399,10 +399,6 @@ body {
   font-weight: 300;
   line-height: 1.7;
   justify-content: center;
-}
-
-.chart-margin {
-  flex-direction: row;
 }
 
 .shadowed {
