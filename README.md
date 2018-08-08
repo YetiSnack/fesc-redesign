@@ -33,7 +33,5 @@ Validation of HTML and CSS 2.1 using W3C Validation services in Google Chrome fo
 	-Implement missing accessibility features.
 	-Implement performance optimizations specified in Lighthouse report.
 
-
-
-	## Chart type decision
-	I chose to use line charts for this data because each of the types of data contain one series tracked over time.
+# Chart type decision
+I chose to use line charts for this data because each of the types of data contain one series tracked over time.
