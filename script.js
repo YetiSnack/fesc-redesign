@@ -161,7 +161,7 @@ function drawChartB() {
 function drawChartC() {
 
   let request = new XMLHttpRequest()
-  let requestUrl = "http://api.eia.gov/series/?api_key=b2d7cde19e854df8d44a4fda3998d0d3&series_id=SEDS.TETCB.FL.A"
+  let requestUrl = "https://api.eia.gov/series/?api_key=b2d7cde19e854df8d44a4fda3998d0d3&series_id=SEDS.TETCB.FL.A"
   request.open('GET', requestUrl, true)
 
   request.onload = function() {
@@ -200,7 +200,7 @@ function drawChartC() {
 function drawChartD() {
 
   let request = new XMLHttpRequest()
-  let requestUrl = "http://api.eia.gov/series/?api_key=b2d7cde19e854df8d44a4fda3998d0d3&series_id=SEDS.REPRB.FL.A"
+  let requestUrl = "https://api.eia.gov/series/?api_key=b2d7cde19e854df8d44a4fda3998d0d3&series_id=SEDS.REPRB.FL.A"
   request.open('GET', requestUrl, true)
 
   request.onload = function() {
