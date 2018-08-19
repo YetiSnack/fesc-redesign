@@ -31,10 +31,10 @@ let contentPanels = [{
 }]
 
 document.addEventListener("DOMContentLoaded", function() {
-  let profileListings = new Vue({
-    el: '#profileListings',
+  let contentPanelListings = new Vue({
+    el: '#contentPanelListings',
     data: {
-      profiles: contentPanels,
+      panels: contentPanels,
     }
   })
 })

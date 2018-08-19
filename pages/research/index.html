@@ -52,7 +52,7 @@
     </div>
 
     <div class="research-content-outer-box">
-      <div id="profileListings" class="research-content-inner-box">
+      <div id="contentPanelListings" class="research-content-inner-box">
         <div class="research-content-heading">
           <h1>Research Vision</h1>
           <p>The Florida Energy System Consortium performs scholarly research and analysis of energy systems that contributes to a sustainable energy economy for Florida.</p>
@@ -60,20 +60,20 @@
             the State universities would position university researchers to address energy systems in a manner not possible at a single university.</p>
           <p> Building on this observation, our stated vision is to be a world leader in energy research enabled by a systems approach.</p>
         </div>
-        <div class="research-content-panels-box profile" v-for="profile in profiles">
+        <div class="research-content-panels-box" v-for="panel in panels">
           <div class="research-content-panel ">
             <div class="research-content-panel-image">
-              <img :src="profile.imgSource" :alt="profile.name">
+              <img :src="panel.imgSource" :alt="panel.name">
             </div>
             <div class="research-content-panel-info">
               <div class="research-content-panel-info-heading">
-                {{profile.title}}
+                {{panel.title}}
               </div>
-              <p>{{profile.content}}</p>
+              <p>{{panel.content}}</p>
             </div>
             <div class="research-content-panel-status">
               <p>
-                Budget: {{profile.budget}}<br> Project Time Period: {{profile.timePeriod}}<br> Universities: {{profile.universities}}<br> External Collaborators: {{profile.collaborators}}<br> Status: {{profile.projectStatus}}
+                Budget: {{panel.budget}}<br> Project Time Period: {{panel.timePeriod}}<br> Universities: {{panel.universities}}<br> External Collaborators: {{panel.collaborators}}<br> Status: {{panel.projectStatus}}
               </p>
             </div>
           </div>
