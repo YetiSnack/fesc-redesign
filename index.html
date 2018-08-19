@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="nav.js"></script>
+  <script src="calendar-entry.js"></script>
 </head>
 <!--  -->
 
@@ -115,101 +116,40 @@
           </div>
         </div>
       </div>
+
       <div class="side-box">
-        <div class="calendar">
+        <div class="calendar" id="calendarListings">
           <div class="calendar-title">
             Calendar
           </div>
-          <div class="calendar-entry">
+          <div class="calendar-entry" v-for="entry in entries">
             <div class="calendar-entry-cal-date">
-              <div class="calendar-entry-month">Aug
+              <div class="calendar-entry-month">{{entry.month}}
               </div>
-              <div class="calendar-entry-date">24
+              <div class="calendar-entry-date">{{entry.date}}
               </div>
-              <div class="calendar-entry-day">Fri
+              <div class="calendar-entry-day">{{entry.day}}
               </div>
             </div>
             <div class="calendar-entry-info">
               <div class="calendar-entry-info-title">
-                <p>FESC Annual Energy Conference</p>
+                <p>
+                  {{entry.title}}
+                </p>
               </div>
               <div class="calendar-entry-info-detail">
-                <p>Grinter Hall, 4:00pm - 7:30pm</p>
+                <p>
+                  {{entry.detail}}
+                </p>
               </div>
             </div>
           </div>
-          <div class="calendar-entry">
-            <div class="calendar-entry-cal-date">
-              <div class="calendar-entry-month">Sep
-              </div>
-              <div class="calendar-entry-date">19
-              </div>
-              <div class="calendar-entry-day">Wed
-              </div>
-            </div>
-            <div class="calendar-entry-info">
-              <div class="calendar-entry-info-title">
-                <p>Renewable Energy Symposium</p>
-              </div>
-              <div class="calendar-entry-info-detail">
-                <p>Grinter Hall, 2:00pm - 4:30pm</p>
-              </div>
-            </div>
-          </div>
-          <div class="calendar-entry">
-            <div class="calendar-entry-cal-date">
-              <div class="calendar-entry-month">Oct
-              </div>
-              <div class="calendar-entry-date">01
-              </div>
-              <div class="calendar-entry-day">Mon
-              </div>
-            </div>
-            <div class="calendar-entry-info">
-              <div class="calendar-entry-info-title">
-                <p>Graduate Research Proposals</p>
-              </div>
-              <div class="calendar-entry-info-detail">
-                <p>Grinter Hall, 10:00am - 1:30pm</p>
-              </div>
-            </div>
-          </div>
-          <div class="calendar-entry">
-            <div class="calendar-entry-cal-date">
-              <div class="calendar-entry-month">Oct
-              </div>
-              <div class="calendar-entry-date">01
-              </div>
-              <div class="calendar-entry-day">Mon
-              </div>
-            </div>
-            <div class="calendar-entry-info">
-              <div class="calendar-entry-info-title">
-                <p>Undergraduate Research Presentations</p>
-              </div>
-              <div class="calendar-entry-info-detail">
-                <p>Grinter Hall, 3:00pm - 5:00pm</p>
-              </div>
-            </div>
-          </div>
-          <div class="calendar-entry">
-            <div class="calendar-entry-cal-date">
-              <div class="calendar-entry-month">Nov
-              </div>
-              <div class="calendar-entry-date">6
-              </div>
-              <div class="calendar-entry-day">Tue
-              </div>
-            </div>
-            <div class="calendar-entry-info">
-              <div class="calendar-entry-info-title">
-                <p>Department Chairs Committee Meeting</p>
-              </div>
-              <div class="calendar-entry-info-detail">
-                <p>Grinter Hall, 9:00am - 10:00am</p>
-              </div>
-            </div>
-          </div>
+
+
+
+
+
+
         </div>
         <div class="video">
           <iframe src="https://www.youtube.com/embed/YA2ofbdd-G8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
